@@ -1,0 +1,40 @@
+<div class="container">
+  <h1 class="page-header">JukeBox</h1>
+
+  <div class="row">
+
+    <!-- Playlist -->
+    <section class="playlist col-md-6">
+      <h2>Playlist</h2>
+      <ul id="playlist-list"></ul>
+      <a id="play-button" href="#" class="btn btn-primary btn-block btn-lg">Play All</a>
+
+      <hr>
+
+      <h3>Add a Song</h3>
+      <form id="song-form">
+        <div class="form-group">
+          <input type="text" name="title" placeholder="Title..." class="form-control"/>
+        </div>
+        <div class="form-group">
+          <textarea name="notes" placeholder="Notes..." class="form-control"></textarea>
+        </div>
+        <input type="submit" class="btn btn-default" value="Add Song"/>
+      </form>
+    </section>
+
+    <!-- Library -->
+    <section class="library col-md-6">
+      <h2><input type="text" id="filter-library" class="form-control" placeholder="Filter..."/>Library</h2>
+      <ul id="library-list"></ul>
+    </section>
+
+  </div>
+
+  <!-- Messages -->
+  <div id="message" class="alert alert-info">
+    <h4>Welcome to Jukebox!</h4>
+    <p>Add some songs to the Playlist to start listening.</p>
+  </div>
+
+</div>
